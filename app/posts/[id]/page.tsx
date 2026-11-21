@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   description: "รวมบทความทั้งหมดในบล็อก",
 };
 
+interface Post {
+  id: number;
+  title: string;
+  body: string;
+}
 
 // ✨ TypeScript: params มีtype { id: string }
 export default async function PostDetail({
